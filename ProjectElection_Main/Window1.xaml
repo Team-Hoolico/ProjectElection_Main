@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjectElection_Main"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
+        Title="Vote" Height="1080" Width="1920" ResizeMode="NoResize" WindowState="Maximized" WindowStartupLocation="CenterScreen" Topmost="True" WindowStyle="None">
     <Window.Resources>
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
@@ -67,7 +67,7 @@
         <ImageBrush ImageSource="/tedkuzeykibris.jpg"/>
     </Window.Background>
     <Grid Width="1920" Height="1080">
-        <Rectangle HorizontalAlignment="Left" Height="348" Margin="101,41,0,0" VerticalAlignment="Top" Width="438" RenderTransformOrigin="0.5,0.5">
+        <Rectangle HorizontalAlignment="Left" Height="869" Margin="215,99,0,0" VerticalAlignment="Top" Width="1095" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -83,12 +83,12 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle HorizontalAlignment="Left" Height="348" Margin="-178,41,0,0" VerticalAlignment="Top" Width="438" RenderTransformOrigin="0.5,0.5">
+        <Rectangle HorizontalAlignment="Left" Height="869" Margin="-481,99,0,0" VerticalAlignment="Top" Width="1094" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="-270"/>
+                    <RotateTransform Angle="90"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Rectangle.RenderTransform>
@@ -99,7 +99,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle HorizontalAlignment="Left" Height="348" Margin="521,41,0,0" VerticalAlignment="Top" Width="438" RenderTransformOrigin="0.5,0.5">
+        <Rectangle HorizontalAlignment="Left" Height="869" Margin="1264,99,0,0" VerticalAlignment="Top" Width="1094" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -115,12 +115,12 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle HorizontalAlignment="Left" Height="348" Margin="242,41,0,0" VerticalAlignment="Top" Width="438" RenderTransformOrigin="0.5,0.5">
+        <Rectangle HorizontalAlignment="Left" Height="869" Margin="568,99,0,0" VerticalAlignment="Top" Width="1094" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="-270"/>
+                    <RotateTransform Angle="90"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Rectangle.RenderTransform>
@@ -132,116 +132,185 @@
             </Rectangle.Fill>
         </Rectangle>
 
-        <Rectangle HorizontalAlignment="Left" Height="437" Margin="55,0,0,0" VerticalAlignment="Top" Width="229" Fill="#FF022873"/>
-        <Rectangle HorizontalAlignment="Left" Height="437" Margin="519,0,0,0" VerticalAlignment="Top" Width="229" Fill="#FF022873"/>
-        <RadioButton Content="Gaye Güçlü" HorizontalAlignment="Left" Margin="74,389,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Bahnschrift Light" Background="White" Foreground="White" RenderTransformOrigin="0.84,1.031"/>
-        <RadioButton Content="Tan Paralik" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" FontFamily="Bahnschrift Light" Background="White" Foreground="White" Margin="74,343,0,0"/>
-        <RadioButton Content="Josie İlkim Çakmak" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" FontFamily="Bahnschrift Light" Background="White" Foreground="White" Margin="74,297,0,0"/>
-        <RadioButton Content="Nesibe Özel" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" FontFamily="Bahnschrift Light" Background="White" Foreground="White" Margin="74,251,0,0"/>
-        <RadioButton Content="Nisan Üstün" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" FontFamily="Bahnschrift Light" Background="White" Foreground="White" Margin="74,205,0,0"/>
-        <RadioButton Content="Serkan Efe Ünal" HorizontalAlignment="Left" Margin="539,389,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Bahnschrift Light" Background="White" Foreground="White" RenderTransformOrigin="0.84,1.031"/>
-        <RadioButton Content="Berk Paçalı" HorizontalAlignment="Left" Margin="539,343,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Bahnschrift Light" Background="White" Foreground="White" RenderTransformOrigin="0.84,1.031"/>
-        <RadioButton Content="Laren Sayılı" HorizontalAlignment="Left" Margin="539,297,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Bahnschrift Light" Background="White" Foreground="White" RenderTransformOrigin="0.84,1.031"/>
-        <RadioButton Content="Belgin Bal" HorizontalAlignment="Left" Margin="539,251,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Bahnschrift Light" Background="White" Foreground="White" RenderTransformOrigin="0.84,1.031"/>
-        <RadioButton Content="Ediz Terzioğlu" HorizontalAlignment="Left" Margin="539,205,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Bahnschrift Light" Background="White" Foreground="White" RenderTransformOrigin="0.84,1.031"/>
-        <Button Width="100" Content=""  
-          Height="100" RenderTransformOrigin="0.516,0.522" Margin="584,26,1236,954">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black"/>
-                    <GradientStop Color="White" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Grid>
-                        <Ellipse Stroke="Black"  
-                           StrokeThickness="0">
-                            <Ellipse.Fill>
-                                <RadialGradientBrush>
-                                    <RadialGradientBrush.Transform>
-                                        <TransformGroup>
-                                            <ScaleTransform ScaleY="0.65" />
-                                        </TransformGroup>
-                                    </RadialGradientBrush.Transform>
-                                    <GradientStop Offset="0"  
-                                            Color="white" />
-                                    <GradientStop Offset="1"  
-                                            Color="White" />
-                                    <GradientStop Offset="1"  
-                                            Color="White" />
-                                </RadialGradientBrush>
-                            </Ellipse.Fill>
-                        </Ellipse>
-                        <ContentPresenter HorizontalAlignment="Center"  
-                                    VerticalAlignment="Center"/>
-                    </Grid>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button Width="100" Content=""  
-            Height="100" RenderTransformOrigin="0.516,0.522" Margin="120,26,1700,954">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black"/>
-                    <GradientStop Color="White" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Grid>
-                        <Ellipse Stroke="Black"  
-                            StrokeThickness="0">
-                            <Ellipse.Fill>
-                                <RadialGradientBrush>
-                                    <RadialGradientBrush.Transform>
-                                        <TransformGroup>
-                                            <ScaleTransform ScaleY="0.65" />
-                                        </TransformGroup>
-                                    </RadialGradientBrush.Transform>
-                                    <GradientStop Offset="0"  
-                                        Color="white" />
-                                    <GradientStop Offset="1"  
-                                        Color="White" />
-                                    <GradientStop Offset="1"  
-                                        Color="White" />
-                                </RadialGradientBrush>
-                            </Ellipse.Fill>
-                        </Ellipse>
-                        <ContentPresenter HorizontalAlignment="Center"  
-                            VerticalAlignment="Center"/>
-                    </Grid>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <TextBlock HorizontalAlignment="Left" Margin="588,126,0,0" TextWrapping="Wrap" Text="DASH" VerticalAlignment="Top" RenderTransformOrigin="0.471,0.729" Foreground="White" FontSize="36"/>
-        <TextBlock HorizontalAlignment="Left" Margin="613,170,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" RenderTransformOrigin="0.471,0.729" Foreground="White" FontSize="10"/>
-        <TextBlock HorizontalAlignment="Left" Margin="95,126,0,0" TextWrapping="Wrap" Text="Unlocked" VerticalAlignment="Top" RenderTransformOrigin="0.471,0.729" Foreground="White" FontSize="36"/>
-        <TextBlock HorizontalAlignment="Left" Margin="149,170,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" RenderTransformOrigin="0.471,0.729" Foreground="White" FontSize="10"/>
-        <Image HorizontalAlignment="Left" Height="137" Margin="340,88,0,0" VerticalAlignment="Top" Width="125" Source="/tedicon.jpg">
+        <Rectangle HorizontalAlignment="Left" Height="1092" Margin="100,-4,0,0" VerticalAlignment="Top" Width="573" Fill="#FF022873">
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="1092" Margin="1260,-4,0,0" VerticalAlignment="Top" Width="572" Fill="#FF022873">
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Image HorizontalAlignment="Left" Height="343" Margin="812,215,0,0" VerticalAlignment="Top" Width="313" Source="/tedicon.jpg">
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
             <Image.OpacityMask>
                 <ImageBrush ImageSource="/tedicon.jpg"/>
             </Image.OpacityMask>
         </Image>
-        <TextBlock HorizontalAlignment="Left" Margin="369,230,0,0" TextWrapping="Wrap" Text="2022-2023" VerticalAlignment="Top" RenderTransformOrigin="0.471,0.729" Foreground="White" FontSize="14"/>
-        <Button Style="{DynamicResource Round}" Content="Submit" HorizontalAlignment="Left" Margin="333,264,0,0" VerticalAlignment="Top" Width="139" Height="49" Foreground="White" FontSize="30">
+        <TextBlock x:Name="Year" HorizontalAlignment="Left" Margin="842,586,0,0" TextWrapping="Wrap" Text="2022-2023" VerticalAlignment="Top" RenderTransformOrigin="0.471,0.729" Foreground="White" FontSize="48" Height="66" Width="252" FontWeight="Bold" TextAlignment="Right"/>
+        <Button x:Name="Submit" Style="{DynamicResource Round}" HorizontalAlignment="Left" Margin="773,673,0,0" VerticalAlignment="Top" Width="390" Height="155" Foreground="White" FontSize="20" Click="Button_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF083EA9"/>
                     <GradientStop Color="#FF022873" Offset="1"/>
                 </LinearGradientBrush>
             </Button.Background>
+            <TextBlock TextAlignment="Center" FontSize="48">Oy Ver <LineBreak/> Submit Vote</TextBlock>
         </Button>
-        <Ellipse Margin="128,34,1707,962">
-            <Ellipse.Fill>
-                <ImageBrush ImageSource="/unloc.png"/>
-            </Ellipse.Fill>
-        </Ellipse>
-        <Ellipse Margin="591,34,1244,962">
-            <Ellipse.Fill>
-                <ImageBrush ImageSource="/Screenshot 2022-10-19 105621.png"/>
-            </Ellipse.Fill>
-        </Ellipse>
+        <TextBlock x:Name="Unlocked" HorizontalAlignment="Left" Margin="168,349,0,0" TextWrapping="Wrap" Text="Unlocked" VerticalAlignment="Top" RenderTransformOrigin="0.471,0.729" Foreground="White" FontSize="86" FontWeight="Bold" Height="119" Width="438" TextAlignment="Center"/>
+        <Grid HorizontalAlignment="Left" Height="249" Margin="263,61,0,0" VerticalAlignment="Top" Width="250">
+            <Button Content="" RenderTransformOrigin="0.516,0.522">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Ellipse Stroke="Black"  
+                                StrokeThickness="0">
+                                <Ellipse.Fill>
+                                    <RadialGradientBrush>
+                                        <RadialGradientBrush.Transform>
+                                            <TransformGroup>
+                                                <ScaleTransform ScaleY="0.65" />
+                                            </TransformGroup>
+                                        </RadialGradientBrush.Transform>
+                                        <GradientStop Offset="0"  
+                                            Color="white" />
+                                        <GradientStop Offset="1"  
+                                            Color="White" />
+                                        <GradientStop Offset="1"  
+                                            Color="White" />
+                                    </RadialGradientBrush>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <ContentPresenter HorizontalAlignment="Center"  
+                                VerticalAlignment="Center"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Ellipse Margin="20,20,17,19">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/unloc.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="540" Margin="123,496,0,0" VerticalAlignment="Top" Width="530" Grid.Row="5">
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Viewbox Height="108" Width="530" VerticalAlignment="Center" HorizontalAlignment="Left">
+                    <RadioButton HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Bahnschrift Light" Background="White" Foreground="White" RenderTransformOrigin="0.84,1.031" FontSize="10"/>
+                </Viewbox>
+                <TextBlock Height="70" FontSize="48" Foreground="White" HorizontalAlignment="Left" Width="416" VerticalAlignment="Center" Margin="108,0,0,0"><Run Text="Nisan Üstün"/></TextBlock>
+            </Grid>
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,108,0,0">
+                <Viewbox Height="108" Width="530" VerticalAlignment="Center" HorizontalAlignment="Left">
+                    <RadioButton HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Bahnschrift Light" Background="White" Foreground="White" RenderTransformOrigin="0.84,1.031" FontSize="10"/>
+                </Viewbox>
+                <TextBlock Height="70" FontSize="48" Foreground="White" HorizontalAlignment="Left" Width="416" VerticalAlignment="Center" Margin="108,0,0,0" Text="Nesibe Özel"/>
+            </Grid>
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,216,0,0">
+                <Viewbox Height="108" Width="530" VerticalAlignment="Center" HorizontalAlignment="Left">
+                    <RadioButton HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Bahnschrift Light" Background="White" Foreground="White" RenderTransformOrigin="0.84,1.031" FontSize="10"/>
+                </Viewbox>
+                <TextBlock Height="70" FontSize="48" Foreground="White" HorizontalAlignment="Left" Width="416" VerticalAlignment="Center" Margin="108,0,0,0" Text="Tan Paralik"/>
+            </Grid>
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,324,0,0">
+                <Viewbox Height="108" Width="530" VerticalAlignment="Center" HorizontalAlignment="Left">
+                    <RadioButton HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Bahnschrift Light" Background="White" Foreground="White" RenderTransformOrigin="0.84,1.031" FontSize="10"/>
+                </Viewbox>
+                <TextBlock Height="70" FontSize="48" Foreground="White" HorizontalAlignment="Left" Width="416" VerticalAlignment="Center" Margin="108,0,0,0" Text="Josie İ. Çakmak"/>
+            </Grid>
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,432,0,0">
+                <Viewbox Height="108" Width="530" VerticalAlignment="Center" HorizontalAlignment="Left">
+                    <RadioButton HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Bahnschrift Light" Background="White" Foreground="White" RenderTransformOrigin="0.84,1.031" FontSize="10"/>
+                </Viewbox>
+                <TextBlock Height="70" FontSize="48" Foreground="White" HorizontalAlignment="Left" Width="416" VerticalAlignment="Center" Margin="108,0,0,0" Text="Gaye Güçlü"/>
+            </Grid>
+        </Grid>
+        <TextBlock x:Name="Dash" HorizontalAlignment="Left" Margin="1321,349,0,0" TextWrapping="Wrap" Text="Dash" VerticalAlignment="Top" RenderTransformOrigin="0.471,0.729" Foreground="White" FontSize="86" FontWeight="Bold" Height="119" Width="438" TextAlignment="Center"/>
+        <Grid HorizontalAlignment="Left" Height="540" Margin="1281,496,0,0" VerticalAlignment="Top" Width="530">
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Viewbox Height="108" Width="530" VerticalAlignment="Center" HorizontalAlignment="Left">
+                    <RadioButton HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Bahnschrift Light" Background="White" Foreground="White" RenderTransformOrigin="0.84,1.031" FontSize="10"/>
+                </Viewbox>
+                <TextBlock Height="70" FontSize="48" Foreground="White" HorizontalAlignment="Left" Width="416" VerticalAlignment="Center" Margin="108,0,0,0" Text="Ediz Terzioğlu"/>
+            </Grid>
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,108,0,0">
+                <Viewbox Height="108" Width="530" VerticalAlignment="Center" HorizontalAlignment="Left">
+                    <RadioButton HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Bahnschrift Light" Background="White" Foreground="White" RenderTransformOrigin="0.84,1.031" FontSize="10"/>
+                </Viewbox>
+                <TextBlock Height="70" FontSize="48" Foreground="White" HorizontalAlignment="Left" Width="416" VerticalAlignment="Center" Margin="108,0,0,0" Text="Belgin Bal"/>
+            </Grid>
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,216,0,0">
+                <Viewbox Height="108" Width="530" VerticalAlignment="Center" HorizontalAlignment="Left">
+                    <RadioButton HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Bahnschrift Light" Background="White" Foreground="White" RenderTransformOrigin="0.84,1.031" FontSize="10"/>
+                </Viewbox>
+                <TextBlock Height="70" FontSize="48" Foreground="White" HorizontalAlignment="Left" Width="416" VerticalAlignment="Center" Margin="108,0,0,0" Text="Laren Sayılı"/>
+            </Grid>
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,324,0,0">
+                <Viewbox Height="108" Width="530" VerticalAlignment="Center" HorizontalAlignment="Left">
+                    <RadioButton HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Bahnschrift Light" Background="White" Foreground="White" RenderTransformOrigin="0.84,1.031" FontSize="10"/>
+                </Viewbox>
+                <TextBlock Height="70" FontSize="48" Foreground="White" HorizontalAlignment="Left" Width="416" VerticalAlignment="Center" Margin="108,0,0,0" Text="Berk Paçalı"/>
+            </Grid>
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,432,0,0">
+                <Viewbox Height="108" Width="530" VerticalAlignment="Center" HorizontalAlignment="Left">
+                    <RadioButton HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Bahnschrift Light" Background="White" Foreground="White" RenderTransformOrigin="0.84,1.031" FontSize="10"/>
+                </Viewbox>
+                <TextBlock Height="70" FontSize="48" Foreground="White" HorizontalAlignment="Left" Width="416" VerticalAlignment="Center" Margin="108,0,0,0" Text="Serkan E. Ünal"/>
+            </Grid>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="249" Margin="1415,61,0,0" VerticalAlignment="Top" Width="250">
+            <Button Content="" RenderTransformOrigin="0.516,0.522">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Ellipse Stroke="Black"  
+                                StrokeThickness="0">
+                                <Ellipse.Fill>
+                                    <RadialGradientBrush>
+                                        <RadialGradientBrush.Transform>
+                                            <TransformGroup>
+                                                <ScaleTransform ScaleY="0.65" />
+                                            </TransformGroup>
+                                        </RadialGradientBrush.Transform>
+                                        <GradientStop Offset="0"  
+                                            Color="white" />
+                                        <GradientStop Offset="1"  
+                                            Color="White" />
+                                        <GradientStop Offset="1"  
+                                            Color="White" />
+                                    </RadialGradientBrush>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <ContentPresenter HorizontalAlignment="Center"  
+                                VerticalAlignment="Center"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Ellipse Margin="20,20,17,19">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/Screenshot 2022-10-19 105621.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+        </Grid>
 
     </Grid>
 </Window>
