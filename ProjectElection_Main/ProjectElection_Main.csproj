@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Screenshot 2022-10-19 105621.png" />
+    <None Remove="tedicon.jpg" />
+    <None Remove="tedkuzeykibris.jpg" />
+    <None Remove="unloc.png" />
+    <None Remove="unlock.png" />
+    <None Remove="unlocked.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Screenshot 2022-10-19 105621.png" />
+    <Resource Include="tedicon.jpg" />
+    <Resource Include="tedkuzeykibris.jpg" />
+    <Resource Include="unloc.png" />
+    <Resource Include="unlock.png" />
+    <Resource Include="unlocked.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
+</Project>
