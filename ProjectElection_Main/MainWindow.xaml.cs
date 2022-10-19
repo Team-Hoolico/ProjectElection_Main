@@ -21,10 +21,9 @@ namespace ProjectElection_Main
     /// </summary>
     public partial class MainWindow : Window
     {
-        protected string password = "";
+        public string password = "";
         public Button[] ButtonArr;
         public HttpClient http = new HttpClient();
-        public Window1 VoteWindow = new Window1();
         public MainWindow()
         {
             http.BaseAddress = new Uri("https://localhost:7241/");
@@ -47,8 +46,13 @@ namespace ProjectElection_Main
                 string result = await http.GetAsync($"/ValidateVoter/?UID={password}").Result.Content.ReadAsStringAsync();
                 result = result.Trim('"');
                 if (result == "success"){
-                    VoteWindow.Show();
                     Error.Visibility = Visibility.Hidden;
+                    Window1 VoteWindow = new Window1();
+                    VoteWindow.UID = password;
+                    password = "";
+                    PasswordBox.Text = "";
+
+                    VoteWindow.Show();
                 }else{
                     Error.Visibility = Visibility.Visible;
                 }
